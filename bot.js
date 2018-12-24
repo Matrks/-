@@ -316,7 +316,7 @@ client.on("message", message => {
 		    if(!message.channel.guild) return;///n3k4a is one  
                 if(message.author.bot) return;
                 if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply("**تحتاج الى `MANAGE_CHANNELS`**");
-                message.guild.createChannel("التقديمات", "text").then(c =>{
+                message.guild.createChannel("التقديمات", "تقديم").then(c =>{
                     c.overwritePermissions(message.guild.id, {///n3k4a is one  
                         SEND_MESSAGES: false
 

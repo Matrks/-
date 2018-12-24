@@ -242,7 +242,7 @@ client.on("message", message => {
             if(!channel) return message.reply("**لانشاء روم التقديمات !!setsubmissions من فضلك اكتب الامر**")
             if(channel) {
             message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-              m.edit( message.member + ', **اسمك الحقيقى بالكامل ✍**' )///n3k4a is one  
+              m.edit( message.member + ', **اسمك الحقيقى ✍**' )///n3k4a is one  
               m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m1) => {
                   m1 = m1.first();
                   var name = m1.content;
@@ -257,7 +257,7 @@ client.on("message", message => {
                           var age = m2.content;
                           m2.delete()
                           message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                            m.edit( message.member + ', **ما هي لغه البرمجة الخاصه بك ؟ 🎙**' )
+                            m.edit( message.member + ', **هل راح تفاعل 🎙**' )
                             setTimeout(() => {///n3k4a is one  
                               m.delete()
                             }, 10000);
@@ -266,7 +266,7 @@ client.on("message", message => {
                                 var ask = m3.content;
                                 m3.delete();
                                 message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                  m.edit( message.member + ', **VarوCost هل تعرف الفرق بين  📑**' )///n3k4a is one  
+                                  m.edit( message.member + ', **هل راح تحترم قوانين ؟ 📑**' )///n3k4a is one  
                                   setTimeout(() => {
                                     m.delete()
                                   }, 10000);
@@ -275,7 +275,7 @@ client.on("message", message => {
                                       var ask2 = m4.content;
                                       m4.delete();///n3k4a is one  
                                       message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                        m.edit( message.member + ', **لماذا يجب علينا ان نقبلك ؟ اعطنا كودالشخص مسويه ؟🤔**' )
+                                        m.edit( message.member + ', **لماذا يجب علينا ان نقبلك ؟ 🤔**' )
                                         m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m5) => {///n3k4a is one  
                                             m5 = m5.first();
                                             var ask3 = m5.content;
@@ -316,7 +316,7 @@ client.on("message", message => {
 		    if(!message.channel.guild) return;///n3k4a is one  
                 if(message.author.bot) return;
                 if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply("**تحتاج الى `MANAGE_CHANNELS`**");
-                message.guild.createChannel("التقديمات", "تقديم").then(c =>{
+                message.guild.createChannel("التقديمات", "text").then(c =>{
                     c.overwritePermissions(message.guild.id, {///n3k4a is one  
                         SEND_MESSAGES: false
 

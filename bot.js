@@ -230,5 +230,4 @@ if (message.content.startsWith(adminprefix + 'av')) {
 }
 })
 
-
-client.login('NTI0MjEwNDEwMTYxNzAwODc0.DwEfPQ.un9HxI0JSlE0m8LeRNOJCHXOB0g');
+client.login(process.env.BOT_TOKEN);

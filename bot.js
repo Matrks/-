@@ -187,7 +187,7 @@ var prefix = "-";
 
 
 
-const adminprefix = "-";
+const adminprefix = "v";
 const developers = ['345152850751389697'];
 
 console.log("Matrks");
